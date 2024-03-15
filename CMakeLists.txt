@@ -26,8 +26,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Alpha01_OOP
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        DxSideSensor_GraphicTest.cpp
-        DxSideSensor_GraphicTest.h
+        src/Sensor.cpp
+        include/Sensor.h
+
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Alpha01_OOP APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

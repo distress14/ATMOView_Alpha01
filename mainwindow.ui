@@ -17,8 +17,8 @@
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>70</y>
+      <x>0</x>
+      <y>100</y>
       <width>771</width>
       <height>631</height>
      </rect>
@@ -35,62 +35,13 @@
       </widget>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="SxSideSensor" stretch="0,0,0,0,0,0,0,0">
+      <layout class="QVBoxLayout" name="SxSideSensor" stretch="0">
        <property name="spacing">
         <number>0</number>
        </property>
        <property name="sizeConstraint">
         <enum>QLayout::SetDefaultConstraint</enum>
        </property>
-       <item>
-        <widget class="QPushButton" name="pushButton_6">
-         <property name="text">
-          <string>TmpSensor1</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_10">
-         <property name="text">
-          <string>TmpSensor2</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_11">
-         <property name="text">
-          <string>TmpSensor3</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_9">
-         <property name="text">
-          <string>TmpSensor4</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_8">
-         <property name="text">
-          <string>TmpSensor5</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_7">
-         <property name="text">
-          <string>TmpSensor6</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_5">
-         <property name="text">
-          <string>TmpSensor7</string>
-         </property>
-        </widget>
-       </item>
        <item>
         <spacer name="VSpacerDownSensor">
          <property name="orientation">
@@ -153,6 +104,118 @@
               <string>TmpGraphic4</string>
              </property>
             </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>210</y>
+      <width>261</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="SensorLayoutUnited">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="UpSensorLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="UpSensorLayoutDelDup" stretch="1,1">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetFixedSize</enum>
+         </property>
+         <item>
+          <widget class="QPushButton" name="DeleteSensor">
+           <property name="text">
+            <string>X</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="DuplicateSensor">
+           <property name="text">
+            <string>+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTextBrowser" name="SimulatedOrNot"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="MidBottomCompressionV">
+       <item>
+        <layout class="QVBoxLayout" name="MidUnited">
+         <property name="spacing">
+          <number>-1</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="SensorNameLabel">
+           <property name="text">
+            <string>SensorName</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="MidSensorLayoutG">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item row="1" column="1">
+            <widget class="QTextBrowser" name="Value2"/>
+           </item>
+           <item row="0" column="0">
+            <widget class="QTextBrowser" name="IDentification"/>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="IsRunningTOCHANGE">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QTextBrowser" name="Value1"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="BottomSensorLayoutH">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QTextBrowser" name="LastUpdate"/>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="Errors"/>
            </item>
           </layout>
          </item>
