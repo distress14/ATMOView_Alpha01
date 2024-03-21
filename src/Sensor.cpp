@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <QInputDialog>    //Used for opening a the actual Input window asking for UserInput
 #include "../include/Sensor.h"
 
 const int MAX_X = 50;
@@ -52,18 +53,23 @@ bool Sensor::ValidSensorType()       //Checks if the User choosed an avaible Sen
     {
     case 0:
         std::cout << "You choose the Sensor #0 " << std::endl;
+        this->SensorType = 0;
         break;
     case 1:
         std::cout << "You choose the Sensor #1 " << std::endl;
+        this->SensorType = 1;
         break;
     case 2:
         std::cout << "You choose the Sensor #2 " << std::endl;
+        this->SensorType = 2;
         break;
     case 3:
         std::cout << "You choose the Sensor #3 " << std::endl;
+        this->SensorType = 3;
         break;
     case 4:
         std::cout << "You choose the Sensor #4 " << std::endl;
+        this->SensorType = 4;
         break;
     default:
         std::cout << "Bastardo scegli bene" << std::endl;
@@ -73,3 +79,14 @@ bool Sensor::ValidSensorType()       //Checks if the User choosed an avaible Sen
     return 1;  //Type is OK
 }
 
+
+void Sensor::GetUserInput()  //Needs to
+{
+    QDialog UserInputWindow;        //Creates a new Window Object
+
+
+    UserInputWindow.setWindowTitle("Add a new Sensor to the collection");    //Sets the windows title
+
+    //TODO -> See Things That Needs to be checked
+
+}

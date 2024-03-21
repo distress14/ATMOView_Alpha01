@@ -21,6 +21,7 @@ public:
     bool IsOutOfBonds(const float posX, const float posY);    //Checks if the User used a valid position within the Map bounds. Returns 0 if OK
     bool ValidSensorType(const int SensorType);   //Checks if the User choosed an avaible Sensor. Returns 1 if OK
 
+    void GetUserInput();  //Opens a new dialog windows that asks to define Sensor ID - posX & posY - SensorType
     //TODO
     //void CalculateSensorValue(float SensorValue);   //It does every calculation on the actual value and returns it updated.
 };

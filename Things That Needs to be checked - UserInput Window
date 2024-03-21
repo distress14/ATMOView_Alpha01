@@ -1,0 +1,19 @@
+Needs to be checked:
+
+1. QLineEdit *line 1 = new QLineEdit(&UserInputWindow)
+
+2. QLabel *label1 = new QLabel("Opzione 1: ", &UserInputWindow)
+
+3. QCheckBox *checkBox = new QCheckBox("Select Value (0-4)", &UserInputWindow);
+4. QPushButton *okButton = new QPushButton("OK", &UserInputWindow);
+
+5. QObject::connect(okButton, &QPushButton::clicked, &UserInputWindow, &QDialog::accept);
+
+
+6. UserInputWindow.exec() == QDialog::Accepted
+
+7. // Ottenere i valori degli input
+
+        QString input1 = lineEdit1->text();
+        QString input2 = lineEdit2->text();
+        int checkedValue = checkBox->isChecked() ? 1 : 0;
