@@ -22,12 +22,7 @@ int main(int argc, char *argv[])
 
     MainWindow w;
 
-    QStringListModel Sensors;     //Creates the list_model
-    QStringList SensorList;     //Creates the actual list to store the available Sensors.
-    SensorList << "Sensor1" << "Sensor2" << "Sensor3" << "Sensor4" << "Sensor5";     //TODO FIND NAMES
-    Sensors->setStringList(SensorList);      //Sets the elements to the model
 
-   // QMainWindow::ui->ActiveSensors.setmodel(&Sensors);   //Links the model (elements) to the ListView gadget
 
 
 

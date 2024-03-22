@@ -28,3 +28,5 @@ The model provides all the standard functions of an editable model, representing
 Model indexes corresponding to items are obtained with the index() function, and item flags are obtained with flags(). Item data is read with the data() function and written with setData(). The number of rows (and number of items in the string list) can be found with the rowCount() function.
 
 The model can be constructed with an existing string list, or strings can be set later with the setStringList() convenience function. Strings can also be inserted in the usual way with the insertRows() function, and removed with removeRows(). The contents of the string list can be retrieved with the stringList() convenience function.
+
+
